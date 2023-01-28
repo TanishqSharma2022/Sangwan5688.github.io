@@ -17,7 +17,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 
 /* Header Section */
 .aa-header {
-  background: #191919;
+  background: #121213;
   position: relative;
   background-size: cover;
   min-height: 600px; }
@@ -74,10 +74,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
     background-color: #F5FAFD; 
   }
   .aa-screenshots .carousel-inner .carousel-item img {
-      height: 550px;
-      max-height: 550px;
+      height: 600px;
+      max-height: 600px;
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
   }
 }
 
@@ -87,9 +87,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   }
   .aa-screenshots .carousel-inner .carousel-item img {
       height: 400px;
-      max-height: 450px;
+      max-height: 400px;
       width: 100%;
-      max-width: 250px;
+      max-width: 267px;
   }
 }
 
