@@ -205,13 +205,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   color: inherit;
   border-bottom: 1px dashed; }
 
-.slide-left {
+.slide-left.is-visible {
   animation: slideleft 1s ease-in-out both; }
 
 @keyframes slideleft {
   0% {
     opacity: 0;
     transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.slide-right.is-visible {
+  animation: slideright 1s ease-in-out both; }
+
+@keyframes slideright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
   100% {
     opacity: 1;
     transform: translateX(0px); } }
@@ -240,8 +251,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   transition: transform 4s .25s cubic-bezier(0,1,.3,1),
               opacity .3s .25s ease-out,
               -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
-  width: 90%;
-
   will-change: transform, opacity;
 }
 
@@ -249,4 +258,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   opacity: 1;
   -webkit-transform: rotateZ(-2deg);
           transform: rotateZ(-2deg);
+}
+
+.border-text {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
