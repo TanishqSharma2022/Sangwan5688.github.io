@@ -101,11 +101,15 @@ function updateDownloadCount() {
   fetch(endpoint)
     .then(response => response.json())
     .then(data => {
-      let downloadCount = 0;
-      data.forEach(release => {
-        downloadCount += release.assets.reduce((count, asset) => count + asset.download_count, 0);
-      });
-      downloadsCount = downloadCount;
+      if (Array.isArray(data)) {
+        let downloadCount = 0;
+        data.forEach(release => {
+          downloadCount += release.assets.reduce((count, asset) => count + asset.download_count, 0);
+        });
+        downloadsCount = downloadCount;
+      } else {
+        console.log(data);
+      }
     })
     .catch(error => console.error(error));
 }
