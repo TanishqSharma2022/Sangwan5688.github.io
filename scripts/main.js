@@ -1,3 +1,7 @@
+const repo = 'Sangwan5688/BlackHole';
+const endpoint = `https://api.github.com/repos/${repo}/releases`;
+let downloadsCount = 0;
+
 // Smooth scroll for links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -90,7 +94,25 @@ function loop() {
   scroll(loop);
 }
 
+function updateDownloadCount() {
+  fetch(endpoint)
+    .then(response => response.json())
+    .then(data => {
+      let downloadCount = 0;
+      data.forEach(release => {
+        downloadCount += release.assets.reduce((count, asset) => count + asset.download_count, 0);
+      });
+      downloadsCount = downloadCount;
+      document.getElementById('downloads-count').innerHTML = downloadsCount;
+    })
+    .catch(error => console.error(error));
+}
+
 window.onload = function() {
+  updateDownloadCount();
+  const interval = setInterval(function() {
+    updateDownloadCount();
+  }, 5000);
   let elements = document.getElementsByClassName('typewrite');
   for (let i = 0; i < elements.length; i++) {
     let toRotate = elements[i].getAttribute('data-type');
