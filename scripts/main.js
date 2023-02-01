@@ -87,6 +87,9 @@ function loop() {
   elementsToShow.forEach(function(element) {
     if (isElementInViewport(element)) {
       element.classList.add('is-visible');
+      if (element.classList.contains('odometer')) {
+        document.getElementById('downloads-count').innerHTML = downloadsCount;
+      }
     } else {
       element.classList.remove('is-visible');
     }
@@ -103,7 +106,6 @@ function updateDownloadCount() {
         downloadCount += release.assets.reduce((count, asset) => count + asset.download_count, 0);
       });
       downloadsCount = downloadCount;
-      document.getElementById('downloads-count').innerHTML = downloadsCount;
     })
     .catch(error => console.error(error));
 }
@@ -112,6 +114,9 @@ window.onload = function() {
   updateDownloadCount();
   const interval = setInterval(function() {
     updateDownloadCount();
+    if (document.getElementById('downloads-count').classList.contains("is-visible")) {
+      document.getElementById('downloads-count').innerHTML = downloadsCount;
+    }
   }, 5000);
   let elements = document.getElementsByClassName('typewrite');
   for (let i = 0; i < elements.length; i++) {
