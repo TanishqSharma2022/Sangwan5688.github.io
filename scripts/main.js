@@ -115,6 +115,12 @@ function updateDownloadCount() {
 }
 
 window.onload = function() {
+  try {
+    let dt = new Date().getFullYear();
+    document.getElementById('current-year').innerHTML = dt;
+  } catch (error) {
+    console.error(error);
+  }
   updateDownloadCount();
   const interval = setInterval(function() {
     updateDownloadCount();
