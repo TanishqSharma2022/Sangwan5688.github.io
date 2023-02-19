@@ -366,6 +366,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   transition: background .3s;
 }
 
+#dp-dots li { background: #fa8c8c36; }
 #dp-dots li.active { background: #FA8C8C; }
 
 .dp_item { width: 85%; }
