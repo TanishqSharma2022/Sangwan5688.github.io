@@ -280,7 +280,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   display: block;
   position: absolute;
   text-align: center;
+  left: 25%;
   transition: transform 1.2s;
+}
+
+@media (max-width: 992px) {
+  .dp_item {
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    transition: transform 1.2s;
+  }
+}
+
+@media (max-width: 768px) {
+  .dp_item {
+    left: 0%;
+  }
 }
 
 #dp-slider .dp_item:first-child {
@@ -321,7 +338,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 #dp-next,  #dp-prev {
   position: absolute;
   top: 50%;
-  right: 16%;
   height: 33px;
   width: 33px;
   z-index: 10;
@@ -333,11 +349,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
   transform: rotate(180deg);
 }
 
+#dp-next {
+  right: 15px;
+}
+
 #dp-dots {
-  position: absolute;
   bottom: 25px;
   z-index: 12;
-  left: 38%;
   cursor: default;
 }
 
@@ -364,7 +382,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 
 .dp-img:before {
   content: "";
-  position: absolute;
   height: 100%;
   width: 25%;
   z-index: 1;
