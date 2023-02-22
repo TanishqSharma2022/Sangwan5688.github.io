@@ -523,7 +523,8 @@ h6,
   position: fixed;
   bottom: 0;
   right: 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  height: 250px;
+  width: 250px;
   padding: 10px;
   z-index: 9999;
   /* add this line */
