@@ -49,6 +49,10 @@ h6,
   background: #000;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* Header Section */
 
@@ -527,5 +531,4 @@ h6,
   width: 300px;
   padding: 10px;
   z-index: 9999;
-  /* add this line */
 }
