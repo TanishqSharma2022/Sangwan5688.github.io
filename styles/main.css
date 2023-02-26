@@ -531,4 +531,15 @@ a {
   width: 300px;
   padding: 10px;
   z-index: 9999;
+  transition: all 1s ease-in-out;
+}
+
+.floating-card-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 300px;
+  padding: 10px;
+  z-index: 9999;
 }
