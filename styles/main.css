@@ -532,14 +532,22 @@ a {
   padding: 10px;
   z-index: 9999;
   transition: all 1s ease-in-out;
+  background-color: #000;
 }
 
-.floating-card-top {
+.floating-card2 {
+  background-color: #000;
   position: fixed;
-  top: 0;
+  bottom: 110px;
   right: 0;
   height: 100px;
   width: 320px;
   padding: 10px;
   z-index: 9999;
+}
+
+@media (max-width: 767px) {
+  .floating-card2 {
+    display: none;
+  }
 }
