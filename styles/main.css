@@ -314,20 +314,21 @@ a {
   border-bottom: 1px dashed;
 }
 
-.slide-left.is-visible {
+
+/* .slide-left.is-visible {
   animation: slideleft 1s ease-in-out both;
 }
 
 @keyframes slideleft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(0px);
   }
   100% {
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */
 
 .slide-right.is-visible {
   animation: slideright 1s ease-in-out both;
@@ -525,11 +526,10 @@ a {
 
 .floating-card {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   height: 100px;
   width: 320px;
-  padding: 10px;
   z-index: 9999;
   transition: all 1s ease-in-out;
 }
@@ -537,10 +537,9 @@ a {
 .floating-card2 {
   position: fixed;
   bottom: 110px;
-  right: 0;
+  right: 5px;
   height: 100px;
   width: 320px;
-  padding: 10px;
   z-index: 9999;
 }
 
