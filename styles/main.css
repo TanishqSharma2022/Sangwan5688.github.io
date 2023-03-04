@@ -532,11 +532,9 @@ a {
   padding: 10px;
   z-index: 9999;
   transition: all 1s ease-in-out;
-  background-color: #000;
 }
 
 .floating-card2 {
-  background-color: #000;
   position: fixed;
   bottom: 110px;
   right: 0;
