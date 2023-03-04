@@ -153,19 +153,19 @@ function isElementInViewport(el) {
   );
 }
 
-const floatingCard = document.querySelector('.floating-card');
+// const floatingCard = document.querySelector('.floating-card');
 
-document.addEventListener('scroll', function() {
-  const scrollPosition = window.scrollY;
+// document.addEventListener('scroll', function() {
+//   const scrollPosition = window.scrollY;
 
-  if (floatingCard) {
-    if (scrollPosition > 3000) {
-      floatingCard.classList.add('floating-card-top');
-    } else {
-      floatingCard.classList.remove('floating-card-top');
-    }
-  }
-});
+//   if (floatingCard) {
+//     if (scrollPosition > 3000) {
+//       floatingCard.classList.add('floating-card-top');
+//     } else {
+//       floatingCard.classList.remove('floating-card-top');
+//     }
+//   }
+// });
 
 jQuery(document).ready(function() {
 
