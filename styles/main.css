@@ -394,24 +394,16 @@ a {
 .dp_item {
   display: block;
   position: absolute;
+  margin-left: auto;
+  left: 0;
+  right: 24%;
   text-align: center;
-  left: 25%;
   transition: transform 1.2s;
-}
-
-@media (max-width: 992px) {
-  .dp_item {
-    display: block;
-    position: absolute;
-    text-align: center;
-    left: 10%;
-    transition: transform 1.2s;
-  }
 }
 
 @media (max-width: 768px) {
   .dp_item {
-    left: 0%;
+    right: 0;
   }
 }
 
@@ -448,6 +440,33 @@ a {
 .dp_item[data-position="7"] {
   z-index: 4;
   transform: rotateY(0deg) translateX(39%) scale(0.4);
+}
+
+@media (max-width: 768px) {
+  .dp_item[data-position="2"] {
+    z-index: 9;
+    transform: rotateY(0deg) translateX(5%) scale(0.9);
+  }
+  .dp_item[data-position="3"] {
+    z-index: 8;
+    transform: rotateY(0deg) translateX(9.5%) scale(0.8);
+  }
+  .dp_item[data-position="4"] {
+    z-index: 7;
+    transform: rotateY(0deg) translateX(13.5%) scale(0.7);
+  }
+  .dp_item[data-position="5"] {
+    z-index: 6;
+    transform: rotateY(0deg) translateX(17%) scale(0.6);
+  }
+  .dp_item[data-position="6"] {
+    z-index: 5;
+    transform: rotateY(0deg) translateX(20%) scale(0.5);
+  }
+  .dp_item[data-position="7"] {
+    z-index: 4;
+    transform: rotateY(0deg) translateX(22.5%) scale(0.4);
+  }
 }
 
 #dp-next,
