@@ -53,6 +53,10 @@ a {
   text-decoration: none;
 }
 
+.no-decor {
+  text-decoration: none;
+}
+
 
 /* Header Section */
 
@@ -334,6 +338,10 @@ a {
   animation: slideright 1s ease-in-out both;
 }
 
+.slide-down {
+  animation: slidedown 1s ease-in-out both;
+}
+
 @keyframes slideright {
   0% {
     opacity: 0;
@@ -342,6 +350,17 @@ a {
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -541,6 +560,14 @@ a {
 
 #dp-slider .dp_item:hover:not(:first-child) {
   cursor: pointer;
+}
+
+div#banner {
+  position: fixed;
+  top: 0;
+  background-color: #121212;
+  width: 100%;
+  z-index: 9999;
 }
 
 .floating-card {

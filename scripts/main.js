@@ -213,3 +213,7 @@ jQuery(document).ready(function() {
     detect_active();
   });
 });
+
+function closeBanner() {
+  document.getElementById('banner').style.display = 'none';
+}
