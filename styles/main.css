@@ -567,6 +567,7 @@ div#banner {
   top: 0;
   background-color: #121212;
   width: 100%;
+  z-index: 1;
 }
 
 .floating-card {
