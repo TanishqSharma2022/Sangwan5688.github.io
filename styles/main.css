@@ -81,6 +81,10 @@ a {
   padding-bottom: 6rem;
 }
 
+.navbar.navbar-transparent {
+  padding-top: 0px;
+}
+
 @media (max-width: 992px) {
   .aa-header h1 {
     font-size: 38px;
@@ -563,11 +567,7 @@ a {
 }
 
 div#banner {
-  position: absolute;
-  top: 0;
   background-color: #121212;
-  width: 100%;
-  z-index: 1;
 }
 
 .floating-card {
