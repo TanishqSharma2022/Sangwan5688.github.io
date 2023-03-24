@@ -563,7 +563,7 @@ a {
 }
 
 div#banner {
-  position: fixed;
+  position: absolute;
   top: 0;
   background-color: #121212;
   width: 100%;
