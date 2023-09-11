@@ -74,6 +74,7 @@ a {
   box-shadow: none;
   letter-spacing: 1px;
   opacity: 1;
+
 }
 
 .aa-header .aa-header-content {
@@ -408,6 +409,7 @@ a {
   width: 100%;
   position: absolute;
   transform-style: preserve-3d;
+  border: 2px solid blue;
 }
 
 .dp-slider div {
@@ -419,10 +421,12 @@ a {
   position: absolute;
   margin-left: auto;
   left: 0;
-  right: 24%;
+  right: 20%;
   text-align: center;
   transition: transform 1.2s;
+  
 }
+
 
 @media (max-width: 768px) {
   .dp_item {
@@ -594,3 +598,5 @@ div#banner {
     display: none;
   }
 }
+
+
